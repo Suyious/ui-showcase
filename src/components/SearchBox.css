@@ -1,0 +1,40 @@
+.SearchBox{
+    position: absolute;
+    top: 6em;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #C3C3C35E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.SearchBox .SearchButton{
+    display: flex;
+    border-radius: 5px;
+    padding: 0.8em 1em;
+    cursor: pointer;
+}
+
+.SearchBox .SearchButton:hover{
+    background: #a1a1a134;
+}
+
+.SearchBox input{
+    outline: none;
+    border: none;
+    padding: 0 1.5em;
+    width: 30em;
+    max-width: 60vw;
+    background: transparent;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+@media all and (max-width: 768px){
+    .SearchBox .SearchButton{
+        padding: 0.5em 1em;
+    }
+}

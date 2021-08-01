@@ -1,0 +1,102 @@
+.ProjectCard{
+    /* display: flex; */
+    position: relative;
+    /* background: rgba(100, 148, 237, 0.575); */
+    margin-bottom: 3em;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: "Red Hat Text", sans-serif;
+    height: 28em;
+}
+
+.ProjectCard.boxwidth{
+    min-width: 70vw;
+}
+
+.ProjectCard .left{
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ProjectCard .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ProjectCard .left,
+.ProjectCard .right{
+    /* height: 50vh; */
+    height: 28em;
+}
+
+.ProjectCard .right{
+    width: 43vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3em;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ProjectCard .right .head{
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ProjectCard .right .description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.ProjectCard .visit{
+    background: #fd4242;
+    padding: 1em;
+    width: 20em;
+    max-width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-style: italic;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 3em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media all and (max-width: 768px){
+    .ProjectCard{
+        /* height: 70vh; */
+        height: 35em;
+    }
+    .ProjectCard .left{
+        width: 100%;
+    }
+    .ProjectCard .right{
+        width: 100%;
+        /* height: 40vh; */
+        height: 20em;
+        top: unset;
+        bottom: 0;
+        padding: 2em 3em;
+    }
+    .ProjectCard .right .head{
+        font-size: 1.5em;
+    }
+    .ProjectCard .right .description{
+        font-size: 1em;
+    }
+    .ProjectCard .visit{
+        bottom: 1em;
+    }
+}

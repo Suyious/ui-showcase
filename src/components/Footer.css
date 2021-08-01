@@ -1,0 +1,113 @@
+.Footer{
+    padding-top: 5em;
+    position: relative;
+    overflow: hidden;
+    font-family: "Red Hat Text", sans-serif;
+    background: var(--primary-off-white);
+    color: #fff;
+    height: 30em;
+}
+
+.Footer .curve{
+    background: var(--primary-blue);
+}
+
+.Footer .Foot_body{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Footer .Foot_head{
+    margin-bottom: 5em;
+}
+
+.Footer .Foot_head h1{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.Footer .Foot_head p{
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.Footer .Footer_links p{
+    font-weight: 500;
+}
+
+.Footer .Footer_links .Foot_linkul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.Footer .Footer_links .Foot_linkul .Foot_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer .Footer_links .Foot_linkul .Foot_link h3{
+    font-size: 1em;
+}
+
+
+.Footer .Footer_links .Foot_linkul .Foot_link svg{
+    margin-right: 1.5em;
+}
+
+.Footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.Foot_bottom{
+    background:#008ea1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.Foot_bottom .boxwidth{
+    width: 92%;
+}
+
+.Foot_bottom .Foot_bot_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+.Foot_bottom .Foot_bot_body .logo{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.Foot_bottom .Foot_bot_right{
+    display: flex;
+    list-style: none;
+}
+
+.Foot_bottom .Foot_bot_right li{
+    margin-left: 1em;   
+}
+
+@media all and (max-width: 768px){
+    .Footer .Footer_links .Foot_linkul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Footer .Footer_links .Foot_linkul .Foot_link{
+        margin-top: 0.5em;
+    }
+}   

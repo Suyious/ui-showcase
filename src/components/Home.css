@@ -1,0 +1,35 @@
+.landing{
+    margin-top: 80vh;
+    padding-top: 5em;
+    position: relative;
+    overflow: hidden;
+}
+
+.curve{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: var(--primary-off-white);
+    width: 300%;
+    height: 100%;
+    border-radius: 50% 50% 0 0;
+}
+
+.landing .projects{
+    margin-top: 10em;
+}
+
+@media all and (max-width: 768px){
+
+    .landing{
+        margin-top: 50vh;
+    }
+
+    .curve{
+        left: -200%;
+        width: 500%;
+    }
+    .landing .projects{
+        margin-top: 7em;
+    }
+}

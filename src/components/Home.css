@@ -1,8 +1,9 @@
 .landing{
     margin-top: 80vh;
-    padding-top: 5em;
+    padding-top: 8em;
     position: relative;
     overflow: hidden;
+    padding-bottom: 5em;
 }
 
 .curve{
@@ -13,6 +14,8 @@
     width: 300%;
     height: 100%;
     border-radius: 50% 50% 0 0;
+    /* border-radius: 0 0 0 0; */
+    transition: border-radius 500ms ease;
 }
 
 .landing .projects{

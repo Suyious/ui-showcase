@@ -1,6 +1,6 @@
 .SearchBox{
     position: absolute;
-    top: 6em;
+    top: 10em;
     left: 50%;
     transform: translateX(-50%);
     background: #C3C3C35E;

@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
+import Carousel from "./components/carousel/Carousel";
 import Home from "./components/Home";
-import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navigation/>
-        <Route path="/" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/carousel" component={Carousel} />
       </Router>
     </div>
   );

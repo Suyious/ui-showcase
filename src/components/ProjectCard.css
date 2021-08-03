@@ -74,6 +74,14 @@
     transform: translateX(-50%);
 }
 
+.ProjectCard .visit:hover{
+    filter: saturate(1.2);
+}
+
+.ProjectCard .visit:hover p{
+    scale: 1.05;
+}
+
 @media all and (max-width: 768px){
     .ProjectCard{
         /* height: 70vh; */

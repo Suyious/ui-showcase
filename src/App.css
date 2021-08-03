@@ -9,15 +9,33 @@
 :root{
   --primary-blue: #25c5db;
   --primary-off-white: #e4f0f1;
+  --primary-red: #640f05;
 }
 
 .App{
   background: var(--primary-blue);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .boxwidth {
   width: 80%;
   min-width: 90vw;
   margin: 0 auto;
+}
+
+.clickToExit{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.logo{
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }

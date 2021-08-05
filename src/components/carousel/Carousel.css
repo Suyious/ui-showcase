@@ -9,7 +9,7 @@
 }
 
 .Carousel .carousel_container{
-    padding-top: 15vh;
+    padding-top: 16vh;
 }
 
 .Carousel .carousel_container .scroll_buttons{
@@ -44,11 +44,22 @@
 .Carousel .scroller{
     display: flex;
     /* max-width: 90vw; */
-    padding: 0 5vw 0 5vw ;
+    padding: 0 5vw 1em 5vw ;
     overflow-x: scroll;
     flex: none;
     flex-flow: row nowrap;
     scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
+.Carousel .scroller::-webkit-scrollbar{
+    background: transparent;
+    height: 5px;
+}
+
+.Carousel .scroller::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 20px;
 }
 
 .Carousel .scroller .carousel_img{

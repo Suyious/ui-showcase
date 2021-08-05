@@ -1,13 +1,13 @@
 import React from 'react';
 import "./ProjectCard.css"
-import img from "../images/scottpilg.jpg"
+//import img from "../images/scottpilg.jpg"
 import { Link } from 'react-router-dom';
 
-function ProjectCard({name, description, path}) {
+function ProjectCard({name, description, path, screenshot}) {
     return (
         <div className="ProjectCard boxwidth">
             <div className="left">
-                <img src={img} alt="screenshot" />
+                <img src={screenshot} alt="screenshot" />
             </div>
             <div className="right">
                 <div className="head">{name}</div>

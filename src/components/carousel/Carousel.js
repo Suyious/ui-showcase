@@ -47,7 +47,7 @@ function Carousel() {
             <Helmet>
                 <title>Carousel | UI Showcase</title>
                 <meta name="description" content="UI Design for carousel | scrollable, draggable, clickable carousel" />
-                <link rel="icon" href={img} />
+                <link rel="icon" type="image/x-icon" href={img} />
             </Helmet>
             <Navigation subhead="carousel"/>
             <div className="carousel_container">

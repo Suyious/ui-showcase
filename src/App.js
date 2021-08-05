@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={Fallback}>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/ui-showcase">
           <Route exact path="/" component={Home} />
           <Route exact path="/carousel" component={Carousel} />
         </Router>

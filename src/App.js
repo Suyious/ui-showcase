@@ -14,8 +14,8 @@ function App() {
       <Router basename="/ui-showcase">
         <Suspense fallback={Fallback()}>
           <Route exact path="/" component={Home} />
-          <Route exact path="/carousel" component={Carousel} />
-          <Route exact path="/fallbackpreview" component={Fallback}/>
+          <Route path="/carousel" component={Carousel} />
+          <Route path="/fallbackpreview" component={Fallback}/>
         </Suspense>
       </Router>
     </div>

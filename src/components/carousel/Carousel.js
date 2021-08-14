@@ -3,16 +3,18 @@ import { Helmet } from 'react-helmet';
 import Navigation from '../Navigation';
 import "./Carousel.css"
 import img from "../../images/carousel.ico"
+// import {useHistory} from 'react-router-dom';
 // import sctplg2 from "../../images/scottpilg.jpg"
 // import sctplg from "../../images/scottpilg2.jpg"
-//"https://bit.ly/2VpUNYI"
 
 function Carousel() {
     
   const scrollerRef = useRef(null);
+// const path = useHistory().location.pathname;
 
   useEffect(()=>{
-    if(scrollerRef){
+    if(scrollerRef ){
+      //console.log("path is",path);
       window.onkeydown = e => {
         if(e.key==="ArrowRight" || e.key==="l") handleScrollButtons(-1);  
         if(e.key==="ArrowLeft" || e.key==="h") handleScrollButtons(1);  
@@ -34,6 +36,10 @@ function Carousel() {
         }
 
       }
+    }
+    return () => {
+      window.onkeydown = null;
+      console.log("key event disabled")
     }
   },[])
 

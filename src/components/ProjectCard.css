@@ -72,6 +72,14 @@
     bottom: 3em;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectCard .visit svg{
+    fill: #fff;
+    margin-left: 1em;
 }
 
 .ProjectCard .visit:hover{

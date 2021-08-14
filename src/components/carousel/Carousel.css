@@ -62,7 +62,12 @@
     border-radius: 20px;
 }
 
+
 .Carousel .scroller .carousel_img{
+    background: url(../../images/loader.gif);
+    background-position: center;
+    background-size: 2em;
+    background-repeat: no-repeat;
     width: 30em;
     max-width: 90vw;
     height: 40em;

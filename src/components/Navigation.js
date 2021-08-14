@@ -18,6 +18,9 @@ function Navigation({subhead}) {
                setScrolled(false);
            }
        }
+      return () => {
+        window.onscroll = null;
+      }
     },[])
 
     return (

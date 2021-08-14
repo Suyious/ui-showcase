@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Router basename="/ui-showcase">
-        <Suspense fallback={Fallback}>
+        <Suspense fallback={Fallback()}>
           <Route exact path="/" component={Home} />
           <Route path="/carousel" component={Carousel} />
           <Route path="/fallbackpreview" component={Fallback}/>

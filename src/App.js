@@ -11,13 +11,13 @@ const Home = React.lazy(()=>import("./components/Home"))
 function App() {
   return (
     <div className="App">
-      <Router basename="/ui-showcase">
-        <Suspense fallback={Fallback()}>
+      <Suspense fallback={Fallback()}>
+        <Router basename="/ui-showcase">
           <Route exact path="/" component={Home} />
           <Route exact path="/carousel" component={Carousel} />
           <Route exact path="/fallbackpreview" component={Fallback}/>
-        </Suspense>
-      </Router>
+        </Router>
+      </Suspense>
     </div>
   );
 }
